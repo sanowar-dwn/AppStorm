@@ -1,0 +1,368 @@
+/* custom css starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    padding: 0;
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.section-header h1{
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 50.4px;
+    color: rgb(25, 25, 25); 
+}
+.section-header p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: rgb(25, 25, 25);
+    opacity: .5;
+}
+.section-header{
+    padding-bottom: 85px;
+}
+/* custom css ends here */
+/* Navbar css starts here */
+header{
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.nav-link{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.nav-link:hover {
+    color: rgba(255,255,255,.75);
+}
+.active{
+    color: #ffff!important;
+}
+.nav-button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f26d7d;
+    color: #ffff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    border-radius: 100px;
+}
+.nav-button:hover{
+    color: #ffff;
+}
+/* Navbar css ends here */
+/* Banner css starts here */
+#banner{
+    position: relative;
+}
+.carousel-item::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #D24354;
+    opacity: .6;
+}
+.carousel-caption{
+    z-index: 99!important;
+}
+.banner-bottom-shape img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.banner-bottom-shape img:first-child{
+    z-index: 1;
+}
+.carousel-caption{
+    top: 10%;
+    left: 9%;
+}
+.banner-left h4{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31.2px;
+    color: #ffff;
+    text-align: left;
+    opacity: .5;
+    padding-bottom: 15px;
+}
+.banner-left h1{
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 76.8px;
+    color: #ffff;
+    text-align: left;
+    padding-bottom: 36px;
+}
+.banner-left-btn{
+    text-align: left;
+}
+.banner-left-btn a{
+    border-radius: 6.25rem;
+    border-width: .125rem;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 24px;
+    position: relative;
+    outline: none !important;
+    background-color: #f8f9fa;
+    color: black;
+    transition: all linear .3s;
+}
+.banner-left-btn a:hover{
+    background-color: #E2E6EA;
+}
+.banner-right{
+    position: relative;
+}
+.banner-right img{
+    z-index: 9999!important;
+    display: flex;
+}
+.slick-slide img {
+    display: inline-flex;
+}
+.banner-arrow i{
+    color: #ffff;
+    padding: 12px;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+}
+.banner-right-arrow-left {
+    position: absolute;
+    top: 50%;
+    right: 37%;
+    z-index: 9999!important;
+}
+.banner-right-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 9999!important;
+}
+.banner-content-wrapper{
+    display: flex;
+    align-items: center;
+}
+/* Banner css ends here */
+/* works css starts here */
+#works{
+    margin-top: 100px;
+    margin-bottom: 170px;
+}
+.works-item-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.works-item-icon{
+    position: relative;
+}
+.works-item-icon-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin: auto;
+}
+.works-item-text h4{
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(25, 25, 25);
+}
+.works-item-text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.works-item{
+    text-align: center;
+}
+/* works css ends here */
+/* Brand css starts here */
+#brand{
+    padding: 60px 130px;
+    background-color: #F6F6F6;
+}
+/* Brand css ends here */
+/* Tab css starts here */
+#tab{
+    background-image: url('../images/bg-shapes-image.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    position: relative;
+    background-color: #EDEDED;
+}
+.tab-main{
+    padding-top: 140px;
+}
+.tab-content-wrapper{
+    text-align: center;
+}
+.tab-button{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(25, 25, 25);
+    opacity: .5;
+    background-color: none;
+    position: relative;
+}
+.tab-button:hover{
+    color: rgb(25, 25, 25);
+    border-color: transparent!important;
+}
+.nav-tabs {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 90px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: rgb(25, 25, 25)!important;
+    opacity: 1!important;
+    background-color: transparent; 
+    border-color: transparent; 
+    border-bottom: 3px solid #D24354!important;
+}
+.tab-btm-shape{
+    position: absolute;
+    bottom: 0;
+}
+/* Tab css ends here */
+/* About css starts here */
+#about{
+    margin-top: 80px;
+}
+.about-para p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .5);
+}
+.about-para-btn{
+    padding-top: 15px;
+}
+.about-para-btn a{
+    padding: 8px 20px;
+    background-color: #f26d7d;
+    border-color: #f26d7d;
+    color: #fff;
+    border-radius: 100px;
+    box-shadow: 0.125rem 0.1875rem 0.9375rem rgb(0 0 0 / 15%);
+    transition: all linear .3s;
+    font-weight: 600;
+}
+.about-para-btn a:hover{
+    background-color: #f26d7d;
+    border-color: #f26d7d;
+    box-shadow: 0.125rem 0.1875rem 0.9375rem rgb(0 0 0 / 30%);
+}
+.about-top{
+    padding-bottom: 100px;
+}
+#about-btm{
+    background-image: url('../images/bg-shapes-image-02.png');
+    background-position: left;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    padding-bottom: 8.125rem;
+    padding-top: 8.125rem;
+}
+.about-btm-left{
+    padding: 48px;
+}
+.about-btm-left-top-img {
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+.about-btm-left-btm-img {
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+}
+.accordion-button{
+    border-bottom: .0625rem solid rgba(0, 0, 0, .1);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.accordion-button:hover{
+    color: rgb(237, 44, 66);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none; 
+}
+.accordion-button::after {
+    background-image: none;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0; 
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+    border-bottom: .0625rem solid rgba(0, 0, 0, .1);
+}
+.accordion-body{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .5);
+}
+.accordion {
+    --bs-accordion-border-color: transparent; 
+}
+/* About css ends here */
+/* Subscribe css starts here */
+#subscribe{
+    margin-top: 190px;
+
+}
+.subscribe-content{
+    padding-top: 130px;
+}
+
+/* Subscribe css ends here */
