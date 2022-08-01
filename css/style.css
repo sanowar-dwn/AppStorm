@@ -16,6 +16,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 .section-header h1{
     font-size: 42px;
@@ -150,26 +151,28 @@ header{
     display: inline-flex;
 }
 .banner-arrow i{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
     color: #ffff;
-    padding: 12px;
-    border: 3px solid #ffff;
+    border: .125rem solid #ffff;
     border-radius: 50%;
 }
 .banner-right-arrow-left {
     position: absolute;
     top: 50%;
-    right: 37%;
+    right: 34%;
     z-index: 9999!important;
 }
 .banner-right-arrow-right {
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 6%;
     z-index: 9999!important;
 }
-.banner-content-wrapper{
-    display: flex;
-    align-items: center;
+.banner-left{
+    padding-top: 15%;
 }
 /* Banner css ends here */
 /* works css starts here */
@@ -309,7 +312,7 @@ header{
 }
 .about-btm-left-top-img {
     position: absolute;
-    top: 0;
+    top: -10%;
     left: 30%;
 }
 .about-btm-left-btm-img {
@@ -322,6 +325,9 @@ header{
     font-size: 15px;
     font-weight: 500;
     line-height: 18px;
+}
+.accordion-button-last{
+    border: none!important;
 }
 .accordion-button:hover{
     color: rgb(237, 44, 66);
@@ -358,11 +364,640 @@ header{
 /* About css ends here */
 /* Subscribe css starts here */
 #subscribe{
-    margin-top: 190px;
-
+    position: relative;
+    margin-bottom: 140px;
 }
 .subscribe-content{
-    padding-top: 130px;
+    padding-bottom: 8.125rem;
+    padding-top: 8.125rem;
+}
+.subscribe-bg{
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+}
+.subscribe-content h1{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31.2px;
+    color: rgb(25, 25, 25);
+}
+.subscribe-form{
+    padding-top: 20px;
+}
+.input {
+    position: relative;
+    width: 100%;
+}
+.input__label {
+    color: rgb(73, 80, 87);
+    position: absolute;
+    left: 2%;
+    top: 20%;
+    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
+    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+    background: pink;
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    background: var(--color-background);
+    transition: transform 120ms ease-in;
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: .4;
+}
+.input__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    color: #313131;
+    background: #F9F9F9;
+    border: 0;
+    box-shadow: 0 0 0 .125rem rgba(0, 0, 0, .2);
+    border-radius: .125rem;
+    padding: .5625rem .75rem;
+}
+.input__field:focus-visible {
+    outline: none;
+    background: #ffff;
+    box-shadow: 0 0 0 .125rem rgba(0, 0, 0, .4);
+}
+.input__field:focus + .input__label, .input__field:not(:placeholder-shown) + .input__label {
+    background-color: transparent;
+    padding: 0 5px;
+    transform: translate(-20%, -33px) scale(1);
+    opacity: 1;
+    background-color: rgb(237, 44, 66);
+}
+.sub-form-btm-txt{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: .5;
+}
+.subscribe-button{
+    display: flex;
+    align-items: center;
+}
+.subscribe-btn{
+    border-radius: 6.25rem;
+    border-width: .125rem;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    font-weight: 600;
+    font-size: .9375rem;
+    padding: 10px 50px;
+    position: relative;
+    outline: none !important;
+    background-color: #f26d7d;
+    border-color: transparent;
+    color: #fff;
+    width: 100%;
+}
+/* Subscribe css ends here */
+/* Pricing css starts here */
+#pricing{
+    margin-bottom: 200px;
+}
+.card-header h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.pricing-type{
+    background-color: #1B1464;
+    margin-bottom: 0;
+}
+.pricing-price{
+    background-color: #F7F7F7;
+}
+.pricing-price h4{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.2px;
+    color: rgb(25, 25, 25);
+    margin-bottom: 0;
+}
+.pricing-price h6{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18x;
+    color: rgb(25, 25, 25);
+    opacity: .5;
+}
+.pricing-type-prem{
+    background-color: #F26D7D;
+    margin-bottom: 0;
+}
+.pricing-price-prem{
+    background-color: #D96270;
+}
+.pricing-price-prem h4{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.2px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+.pricing-price-prem h6{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18x;
+    color: rgb(255, 255, 255);
+    opacity: .5;
+}
+.pricing-list{
+    padding: 0;
+}
+.pricing-points{
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, .1);
+    margin-bottom: 0;
+}
+.pricing-points:last-child{
+    border-bottom: none;
+}
+.pricing-points h5{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    color: rgb(25, 25, 25);
+    margin-bottom: 0;
+}
+.striked-points{
+    opacity: .5;
+}
+.pricing-btn a{
+    border: 1px solid #f26d7d;
+    color: #f26d7d;
+    border-radius: 6.25rem;
+    border-width: .125rem;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    font-weight: 600;
+    font-size: .9375rem;
+    padding: .5rem 1.25rem;
+    position: relative;
+    outline: none !important;
+    transition: all linear .3s;
+}
+.pricing-btn-prem a{
+    border: 1px solid #f26d7d;
+    background-color: #f26d7d;
+    color: #ffff;
+    border-radius: 6.25rem;
+    border-width: .125rem;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    font-weight: 600;
+    font-size: .9375rem;
+    padding: .5rem 1.25rem;
+    position: relative;
+    outline: none !important;
+    transition: all linear .3s;
+}
+.pricing-btn a:hover{
+    background-color: #f26d7d;
+    color: #ffff;
+}
+.pricing-btn{
+    padding: 1.5625rem;
+}
+.pricing-btn-prem {
+    padding: 3.5625rem 1.562rem 1.562rem 1.562rem;
+}
+.price-card-main{
+    --bs-card-border-color: none;
+    box-shadow: 0.125rem 0.1875rem 0.9375rem rgb(0 0 0 / 15%);
+}
+.special-pricing{
+    margin-top: -1.25rem;
+    box-shadow: 0.375rem 0.3125rem 1.5625rem rgb(0 0 0 / 20%);
+    --bs-card-border-color: none;
+}
+/* Pricing css ends here */
+/* Clients css starts here */
+#clients{
+    margin-bottom: 100px;
+}
+.client-item {
+    font-size: 1.125rem;
+    position: relative;
+    background-size: contain;
+    background-image: url("../images/bubble.svg");
+    background-repeat: no-repeat;
+    background-position: center 3.75rem;
+    padding-bottom: 3.75rem;
+}
+.client-item [class*="client-image"] {
+    box-shadow: .375rem .3125rem 1.5625rem rgba(0, 0, 0, .2);
+    position: relative;
+    margin-bottom: 1.25rem;
+    z-index: 1;
+}
+.client-item .client-shape {
+    padding-top: .9375rem;
+    display: inline-block;
+    position: relative;
+}
+.client-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'  width='52' height='62'%3E%3cpath fill='%23f26d7d' d='M51 29.1c5.8 16.5-7.4 33-23.7 32.6 -2.5 0-4.9-0.3-7.2-1 -9.2-2.5-16.5-9.8-19-19C0.4 39.5 0 37 0 34.5 0 21.7 4.9 6.1 18.1 1.1 32.9-4.6 44.4 12.7 49.3 24 50 25.7 50.5 27.4 51 29.1z'/%3E%3c/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    height: 3.875rem;
+    position: absolute;
+    width: 3.25rem;
+    right: -0.625rem;
+    z-index: 2;
+}
+.client-icon i {
+    color: #fff;
+    left: 1.0625rem;
+    top: 1.5625rem;
+    position: absolute;
+    font-size: 20px;
+}
+.client-icon svg {
+    fill: #f26d7d;
 }
 
-/* Subscribe css ends here */
+.client-item p {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.client-item h4 {
+    margin-bottom: .3125rem;
+}
+.client-item h6 {
+    opacity: .5;
+}
+.client-image {
+    border-radius: 50%;
+    display: inline-block;
+    height: 8.125rem;
+    flex: 0 0 8.125rem;
+    overflow: hidden;
+    width: 8.125rem;
+}  
+[data-bg-image] {
+    background-size: cover;
+    background-position: 50%;
+}
+.client-item p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 35px;
+}
+.client-info h4{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(25, 25, 25);
+}
+.client-info h6{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(25, 25, 25);
+}
+.slick-dots{
+    display: flex!important;
+    justify-content: center;
+}
+.slick-dots li{
+    padding: 0 10px;
+}
+.slick-dots li button {
+    background-color: #191919;
+    border-radius: 50%;
+    display: inline-block;
+    height: .625rem;
+    opacity: .2;
+    transition: .3s ease;
+    width: .625rem;
+    text-indent: -9999px;
+    overflow:hidden;
+    /* more CSS */
+}
+.slick-dots .slick-active button {
+    opacity: .7;
+}
+/* Clients css ends here */
+/* Gallery css starts here */
+#gallery{
+    background-image: url('../images/bg-shapes.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 130px;
+    background-color: #F7F7F7;
+    position: relative;
+    margin-bottom: 190px;
+}
+#gallery::before{
+        background-image: url("../images/bg-shape-mask-up.png");
+        background-size: cover;
+        content: "";
+        left: 0;
+        height: 3.75rem;
+        position: absolute;
+        top: -0.0625rem;
+        width: 100%;
+}
+.gallery-slider-main{
+    padding-top: 44px;
+}
+
+.gallery-item-wrapper{
+    transform: scale(.95);
+    opacity: .5;
+}
+.gallery-item{
+    padding: 10px;
+}
+.gallery-slider-main .slick-current{
+    margin: 0px 10px;
+}
+.gallery-slider-main .slick-current .gallery-item-wrapper{
+    transform: scale(1);
+    opacity: 1;
+}
+.gallery-arrows i {
+    font-size: 20px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(25, 25, 25, .6);
+    transition: all linear .3s;
+}
+.gallery-arrows i:hover{
+    background-color: rgba(25, 25, 25, .8);
+}
+.gallery-slider-arrows{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.gallery-arrows{
+    margin: 0 40px;
+}
+/* Gallery css ends here */
+/* Organize css starts here */
+#organize{
+    margin-bottom: 190px;
+}
+.organize-item{
+    text-align: right;
+}
+.organize-item-right{
+    text-align: left;
+}
+.organize-item h4{
+    padding-top: 13px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(25, 25, 25);
+}
+.organize-item p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.organize-middle{
+    background-image: url('../images/download.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* Organize css ends here */
+/* Download css starts here */
+#download{
+    position: relative;
+    margin-bottom: 140px;
+}
+.donwload-item{
+    border-radius: 187.5rem;
+    overflow: hidden;
+    box-shadow: .375rem .3125rem 1.5625rem rgba(0, 0, 0, .2);
+}
+.download-line-bg{
+    top: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: -9;
+}
+hr {
+    border-top-width: .125rem;
+    border-top: 1px solidrgba(0,0,0,.1);
+    height: 1px;
+}
+/* Download css ends here */
+/* Team css starts here */
+#team{
+    margin-bottom: 150px;
+}
+.team-name h3{
+    color:  rgb(25, 25, 25);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+}
+.team-name h4{
+    color:  rgb(25, 25, 25);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: .5;
+}
+.team-info{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.team-icons i{
+    font-size: 18px;
+    color: #9e9e9e;
+    padding: .125rem .25rem;
+}
+.team-icons{
+    padding: 1.5625rem;
+}
+/* Team css ends here */
+/* Counter css starts here */
+#counter{
+    position: relative;
+}
+.counter-bg{
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.05;
+}
+.counter-main{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.counter-item h2{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.6px;
+    color: rgb(25, 25, 25);
+}
+.counter-item h6{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.2px;
+    color: rgb(25, 25, 25);
+    opacity: .5;
+}
+.counter-item-main{
+    position: relative;
+}
+.counter-item-main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border: .125rem solid #f26d7d;
+    border-radius: 50%;
+    height: .625rem;
+    margin: auto;
+    position: absolute;
+    right: -0.3125rem;
+    top: 0;
+    width: .625rem;
+}
+.counter-item-main:last-child::after{
+    display: none;
+}
+/* Counter css ends here */
+/* Footer css starts here */
+#footer{
+    background-image: url('../images/bg-desk.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 9;
+}
+.footer-box{
+    margin-top: -3.125rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    margin-bottom: 1.875rem;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    padding: 1.5625rem;
+}
+#footer::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: #1B1464;
+    opacity: 0.9;
+    z-index: -9;
+}
+.footer-left h4{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31.2px;
+    color: rgb(25, 25, 25);
+}
+.footer-right h4{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31.2px;
+    color: rgb(25, 25, 25);
+}
+.footer-left{
+    padding-bottom: 30px;
+}
+.footer-left h6{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: rgb(25, 25, 25);
+}
+.footer-container{
+    z-index: 999!important;
+}
+.footer-info h4{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    color: rgb(25, 25, 25);
+    margin-bottom: 0;
+}
+.footer-info h6{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: rgb(25, 25, 25);
+    padding: 0;
+}
+.footer-info{
+    padding-bottom: 10px;
+}
+.footer-form-label{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color:rgb(25, 25, 25); 
+}
+.footer-form-input{
+    border: 0;
+    box-shadow: 0 0 0 .125rem rgba(0, 0, 0, .2);
+    border-radius: .125rem;
+    padding: .5625rem .75rem;
+}
+.footer-form-input:focus{
+    box-shadow: 0 0 0 .125rem rgba(0, 0, 0, .4);
+}
+.form-button{
+    border-radius: 6.25rem;
+    border-width: .125rem;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    font-weight: 600;
+    font-size: .9375rem;
+    padding: .5rem 1.25rem;
+    position: relative;
+    outline: none !important;
+    background-color: #f26d7d;
+    border: 0;
+    color: #fff;
+}
+.form-button:hover{
+    box-shadow: 0.125rem 0.1875rem 0.9375rem rgb(0 0 0 / 30%);
+    transition: all linear .3s;
+}
+.form-button:active{
+    background-color: rgb(237, 44, 66);
+}
+.footer-right-wrapper{
+    margin-bottom: 1.5625rem;
+}
+.footer-copyright p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+/* Footer css ends here */
