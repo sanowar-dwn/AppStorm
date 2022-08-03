@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example"> 
 <!-- Navbar starts here -->
 <header>
     <div class="container">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+        <nav class="navbar navbar-top navbar-expand-lg">
+            <div class="container">
               <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+              </button>  
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
@@ -62,14 +63,14 @@
             <img src="images/banner-1.jpg" class="img-fluid" class="d-block w-100" alt="...">
             <div class="carousel-caption container d-none d-md-block">
               <div class="row banner-content-wrapper">
-                <div class="col-lg-6 banner-left">
+                <div class="col-lg-6 col-md-6 col-sm-6 banner-left">
                   <h4>Get Organized!</h4>
                   <h1>All Your Activities In One Place</h1>
                   <div class="banner-left-btn">
                     <a href="#">Learn More</a>
                   </div>
                 </div>
-                <div class="col-lg-6 banner-right text-end banner-right-slider">
+                <div class="col-lg-6 col-md-6 col-sm-6 banner-right banner-right-slider">
                   <div class="banner-right-slider-item">
                     <img src="images/img-phone-1st-screen.png" class="img-fluid" alt="">
                   </div>
@@ -103,7 +104,7 @@
         <h1>How It Works</h1>
       </div>
       <div class="row works-item-wrapper">
-        <div class="col-lg-4 works-item">
+        <div class="col-lg-4 col-md-4 col-sm-6 works-item">
           <figure class="works-item-icon">
             <img src="images/icon-watch-heart.png" alt="">
             <div class="works-item-icon-bg">
@@ -115,7 +116,7 @@
             <p>Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis</p>
           </div>
       </div>
-      <div class="col-lg-4 works-item">
+      <div class="col-lg-4 col-md-4 col-sm-6 works-item">
           <figure class="works-item-icon">
             <img src="images/icon-lcd-chart.png" alt="">
             <div class="works-item-icon-bg">
@@ -127,7 +128,7 @@
             <p>Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis</p>
           </div>
       </div>
-      <div class="col-lg-4 works-item">
+      <div class="col-lg-4 col-md-4 col-sm-6 works-item">
           <figure class="works-item-icon">
             <img src="images/icon-cup-winner.png" alt="">
             <div class="works-item-icon-bg">
@@ -213,7 +214,7 @@
       </div>
     </div>
     <div class="row about-top">
-      <div class="col-lg-5 about-para">
+      <div class="col-lg-5 col-md-5 col-sm-12 about-para">
         <p>Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque. Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue, egestas egestas purus diam at felis. Nullam tellus turpis, molestie ac urna quis, pulvinar semper massa.</p>
         <p>
           Nam tristique Sed nisl justo, commodo ac gravida vitae, sodales maximus erat. Phasellus euismod nunc metus, et posuere elit venenatis eget. Nunc non risus libero.
@@ -222,7 +223,7 @@
           <a href="#">Download Now</a>
         </div>
       </div>
-      <div class="col-lg-7">
+      <div class="col-lg-7 col-md-7 col-sm-12">
         <img src="images/img-screen-desktop.jpg" class="img-fluid" alt="">
       </div>
     </div>
@@ -233,7 +234,7 @@
 <section id="about-btm">
   <div class="container">
     <div class="row about-btm">
-      <div class="col-lg-7 about-btm-left">
+      <div class="col-lg-7 col-md-7  col-sm-12about-btm-left">
         <div class="abc" style="position: relative;">
           <div class="about-btm-left-top-img">
             <img src="images/img-screen-small-01.jpg" class="img-fluid" alt="">
@@ -244,9 +245,9 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 col-md-5 col-sm-12 feat-wrapper">
         <div class="section-header">
-          <h1 style="padding-bottom: 100px;">Features</h1>
+          <h1 class="feat-head">Features</h1>
           <p>Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque. Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.</p>
         </div>
         <div class="about-right">
@@ -298,7 +299,7 @@
       <div class="col-lg-12 subscribe-content">
         <h1>Subscribe For Crypto News!</h1>
         <div class="row">
-          <div class="col-lg-10 subscribe-form">
+          <div class="col-lg-10 col-md-10 col-sm-12 subscribe-form">
             <form>
                 <label class="input">
                   <input class="input__field" type="text" placeholder=" " />
@@ -307,7 +308,7 @@
                 <small id="emailHelp" class="form-text text-muted sub-form-btm-txt">*You’ll get only relevant news once a week</small>
             </form>
           </div>
-          <div class="col-lg-2 subscribe-button">
+          <div class="col-lg-2 col-md-2 col-sm-12 subscribe-button">
             <div class="subscribe-btn-wrapper">
               <button class="subscribe-btn" type="button">Submit</button>
             </div>
@@ -327,7 +328,7 @@
       <h1>Affordable Prices</h1>
     </div>
     <div class="row">
-      <div class="col-lg-4 p-0">
+      <div class="col-lg-4 col-md-4 col-sm-4 price-card-wrapper p-0">
         <div class="card price-card-main">
           <div class="card-header pricing-type text-center">
             <h4 class="py-2">Basic</h4>
@@ -349,7 +350,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 p-0">
+      <div class="col-lg-4 col-md-4 col-sm-4 price-card-wrapper p-0">
         <div class="card special-pricing">
           <div class="card-header pricing-type-prem text-center">
             <h4 class="py-2">Premium</h4>
@@ -371,7 +372,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 p-0">
+      <div class="col-lg-4 col-md-4 col-sm-4 price-card-wrapper p-0">
         <div class="card price-card-main">
           <div class="card-header pricing-type text-center">
             <h4 class="py-2">Basic</h4>
@@ -493,23 +494,23 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-4">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12">
             <div class="organize-item">
               <img src="images/icon-watch-heart.png" alt="">
               <h4>Invest With The Best</h4>
               <p>Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis</p>
             </div>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12">
             <div class="organize-item">
               <img src="images/icon-lcd-chart.png" alt="">
               <h4>Real Time Price</h4>
               <p>Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis</p>
             </div>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12">
             <div class="organize-item">
               <img src="images/icon-cup-winner.png" alt="">
               <h4>Trade From Enywhere</h4>
@@ -518,26 +519,26 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 organize-middle">
+      <div class="col-lg-4 col-md-4 organize-middle">
         <img src="images/img-phone-1st-screen.png" class="img-fluid" alt="">
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-4">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12">
             <div class="organize-item organize-item-right">
               <img src="images/icon-watch-heart.png" alt="">
               <h4>Invest With The Best</h4>
               <p>Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis</p>
             </div>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12">
             <div class="organize-item organize-item-right">
               <img src="images/icon-lcd-chart.png" alt="">
               <h4>Real Time Price</h4>
               <p>Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis</p>
             </div>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12">
             <div class="organize-item organize-item-right">
               <img src="images/icon-cup-winner.png" alt="">
               <h4>Trade From Enywhere</h4>
@@ -581,7 +582,7 @@
 <section id="team">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="team-item">
           <div class="card">
             <div class="card-header p-0">
@@ -605,7 +606,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="team-item">
           <div class="card">
             <div class="card-header p-0">
@@ -629,7 +630,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="team-item">
           <div class="card">
             <div class="card-header p-0">
@@ -653,7 +654,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="team-item">
           <div class="card">
             <div class="card-header p-0">
@@ -685,19 +686,19 @@
 <section id="counter">
   <div class="container">
     <div class="row counter-main justify-content-center text-center">
-      <div class="col-lg-4 counter-item-main">
+      <div class="col-lg-4 col-md-4 col-sm-4 counter-item-main">
         <div class="counter-item">
           <h2><span class="counter-digit">1,200</span><span>+</span></h2>
           <h6>Clients</h6>
         </div>
       </div>
-      <div class="col-lg-4 counter-item-main">
+      <div class="col-lg-4 col-md-4 col-sm-4 counter-item-main">
         <div class="counter-item">
           <h2><span>$</span><span class="counter-digit">3,15</span><span>M</span></h2>
           <h6>Clients</h6>
         </div>
       </div>
-      <div class="col-lg-4 counter-item-main">
+      <div class="col-lg-4 col-md-4 col-sm-4 counter-item-main">
         <div class="counter-item">
           <h2><span class="counter-digit">14</span><span>%</span></h2>
           <h6>Clients</h6>
@@ -710,7 +711,16 @@
 <!-- Counter ends here -->
 <!-- Maps starts here -->
 <section id="map">
-  <div class="mapouter w-100"><div class="gmap_canvas"><iframe width="1400" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:600px;width:1400px;}</style><a href="https://www.embedgooglemap.net">embed code for google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:600px;width:1400px;}</style></div></div>
+  <div class="google-maps">
+    <iframe
+      src="https://www.google.com/maps/embed"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
 </section>
 <!-- Maps ends here -->
 <!-- Footer starts here -->
@@ -718,7 +728,7 @@
   <div class="container footer-container">
     <div class="row">
       <div class="container footer-box d-flex p-5">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-5 col-sm-12 col-12">
           <div class="footer-left">
            <div class="footer-left">
             <h4>Contact Us</h4>
@@ -738,17 +748,17 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-8 footer-right-wrapper">
+        <div class="col-lg-8 col-md-7 col-sm-12 col-12 footer-right-wrapper">
           <div class="footer-right">
             <h4>Contact Form</h4>
             <div class="footer-form">
               <form>
                 <div class="row">
-                  <div class="form-group col-6" style="padding-right: 10px;">
+                  <div class="form-group col-lg-6 col-12 form-input-wrapper" style="padding-right: 10px;">
                     <label for="exampleInputEmail1" class="footer-form-label">Your Name *</label>
                     <input type="email" class="form-control footer-form-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
                   </div>
-                  <div class="form-group col-6">
+                  <div class="form-group col-lg-6 col-12">
                     <label for="exampleInputPassword1" class="footer-form-label">Your Email</label>
                     <input type="email" class="form-control footer-form-input" id="exampleInputPassword1" placeholder="Your Email">
                   </div>

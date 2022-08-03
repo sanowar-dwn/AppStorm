@@ -1,0 +1,422 @@
+/* Large devices (portrait phones, less than 1400px) */
+@media(min-width:1300.99px){
+    .banner-right{
+        text-align: center;
+    }
+}
+@media(min-width:1200px) and (max-width:1300.98px){
+    .banner-right{
+        text-align: center;
+    }
+    .banner-right-arrow-right {
+        right: 2%;
+    }
+    .carousel-caption {
+        top: 0%;
+    }
+    #works {
+        margin-bottom: 120px;
+    }
+    .banner-right-arrow-left {
+        right: 38%;
+    }
+}
+/* Large devices (portrait phones, less than 1200px) */
+@media(min-width:992px) and (max-width:1199.98px){
+    .banner-right{
+        text-align: center;
+    }
+    .banner-right-arrow-right {
+        right: 1%;
+    }
+    .banner-right-arrow-left {
+        right: 31%;
+    }
+    .banner-right-slider-item img{
+        height: 500px;
+    }
+    .banner-left {
+        padding-top: 5%;
+    }
+    .banner-left h1 {
+        font-size: 50px;
+        line-height: 60.8px;
+    }
+}
+/* Mediuam devices (portrait phones, less than 992px) */
+@media(min-width:768px) and (max-width:991.98px){
+    .banner-right{
+        text-align: center;
+    }
+    header{
+        z-index: 9999999999;
+    }
+    .navbar-top{
+        transition: all linear .3s;
+        background-color: rgb(26, 19, 96);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99999;
+        transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+        padding: 1rem 0!important;
+    }
+    .nav-button {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        border: 2px solid mediumseagreen;
+    }
+    .banner-right-arrow-right {
+        right: 1%;
+    }
+    .banner-right-arrow-left {
+        right: 34%;
+    }
+    .banner-right-slider-item img{
+        height: 400px;
+    }
+    .banner-left {
+        padding-top: 5%;
+    }
+    .banner-left h1 {
+        font-size: 38px;
+        line-height: 45.8px;
+    }
+    #about-btm{
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    .about-btm-left-btm-img {
+        bottom: -25%;
+    }
+    .about-btm-left-top-img {
+        top: -8%;
+        left: 12%;
+    }
+    .accordion-item{
+        background-color: transparent;
+    }
+    .accordion-button{
+        background-color: transparent;
+    }
+    .subscribe-btn {
+        padding: 8px 30px;
+    }
+    .client-item p {
+        padding-top: 0;
+    }
+    .gallery-slider-main .slick-current{
+        margin: 0px 10px;
+    }
+    .gallery-item {
+        padding: 0 90px;
+    }
+    #gallery {
+        padding-top: 80px;
+    }
+    .gallery-slider-arrows {
+        top: 42%;
+    }
+    .gallery-slider-container .section-header {
+        padding-bottom: 0;
+    }
+    .organize-middle{
+        display: flex;
+        align-items: center;
+    }
+    .footer-left h6 {
+        font-size: 18px;
+    }
+}
+/* Small devices (portrait phones, less than 768px) */
+@media(min-width:576px) and (max-width:767.98px){
+    header{
+        z-index: 9999999999;
+    }
+    .navbar-top{
+        transition: all linear .3s;
+        background-color: rgb(26, 19, 96);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99999;
+        transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+        padding: 1rem 0!important;
+    }
+    .nav-button {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        border: 2px solid mediumseagreen;
+    }
+    .banner-right{
+        text-align: center;
+    }
+    .carousel-caption{
+        display: block!important;
+        top: 8%;
+        left: 6%;
+    }
+    .banner-left h4 {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+    .banner-left h1 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35.8px;
+        padding-bottom: 12px;
+    }
+    .banner-right-slider-item img{
+        height: 300px;
+    }
+    .banner-arrow i {
+        height: 30px;
+        width: 30px;
+        line-height: 28px;
+        border: 1px solid #ffff;
+    }
+    .banner-right-arrow-left {
+        right: 36%;
+    }
+    .banner-left {
+        padding-top: 10%;
+    }
+    .works-item-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    #works {
+        margin-bottom: 100px;
+    }
+    .subscribe-btn-wrapper{
+        padding-top: 20px;
+    }
+    .tab-btm-shape {
+        bottom: -1%;
+    }
+    .about-para{
+        padding-bottom: 15px;
+    }
+    .feat-head{
+        padding-bottom: 25px;
+    }
+    .section-header{
+        padding-bottom: 20px;
+    }
+    .feat-wrapper{
+        padding-top: 105px;
+    }
+    #about-btm {
+        padding-bottom: 2.125rem;
+    }
+    .gallery-slider-arrows {
+        top: 43%;
+    }
+    #gallery {
+        margin-bottom: 80px;
+    }
+    .organize-item{
+        text-align: center;
+    }
+    .organize-middle{
+        display: flex;
+        justify-content: center;
+    }
+    #team {
+        margin-bottom: 60px;
+    }
+    .footer-box{
+        display: block!important;
+    }
+    .subscribe-button {
+        display: block;
+    }
+    .team-item{
+        padding-bottom: 20px;
+    }
+    .form-input-wrapper{
+        padding-bottom: 18px;
+    }
+}
+/*XS Device */
+@media(max-width:575px){
+    header{
+        z-index: 9999999999;
+    }
+    .navbar-top{
+        transition: all linear .3s;
+        background-color: rgb(26, 19, 96);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99999;
+        transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+        padding: 1rem 0!important;
+    }
+    .nav-button {
+        text-align: center;
+        width: 100%;
+    }
+    .banner-bottom-shape img {
+        position: absolute;
+        bottom: -1%;
+        left: 0;
+    }
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        border: 2px solid mediumseagreen;
+    }
+   .banner-right{
+        display: none;
+   }
+   .banner-arrow{
+        display: none;
+   }
+   .carousel-caption{
+        display: block!important;
+        top: 8%;
+        left: 0%;
+    }
+    .banner-left h4 {
+        font-size: 18px;
+        padding-bottom: 8px;
+        margin-bottom: 0;
+    }
+    .banner-left h1 {
+        font-size: 30px;
+        line-height: 30.8px;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+    .banner-left h4 {
+        text-align: center;
+    }
+    .banner-left {
+        padding-top: 10%;
+    }
+    .banner-left-btn {
+        text-align: center;
+    }
+    .section-header h1 {
+        font-size: 30px;
+        line-height: 0;
+    }
+    .section-header p {
+        padding-top: 25px;
+        opacity: 1;
+    }
+    .tab-btm-shape {
+        bottom: -1%;
+    }
+    #about-btm {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .section-header{
+        padding-bottom: 25px;
+    }
+    .about-para{
+        padding-bottom: 25px;
+    }
+    .feat-wrapper{
+        padding-top: 55px;
+    }
+    .feat-head {
+        padding-bottom: 0;
+    }
+    .accordion-item{
+        background-color: transparent;
+    }
+    .accordion-button{
+        background-color: transparent;
+    }
+    .subscribe-button {
+        display: block;
+    }
+    .special-pricing {
+     margin-top: 0;
+    }
+    .price-card-wrapper{
+        margin-bottom: 20px;
+    }
+    .client-item p {
+        font-size: 15px;
+        line-height: 25px;
+        padding-top: 0;
+    }
+    .gallery-slider-arrows {
+        top: 45%;
+    }
+    .organize-item {
+        text-align: center;
+    }
+    .team-image img{
+        width: 100%;
+    }
+    .counter-item h2 {
+        font-size: 35px;
+    }
+    .counter-item h6 {
+        font-size: 24px;
+        line-height: 14.2px;
+    }
+    .counter-item-main{
+        padding-bottom: 30px;
+    }
+    .footer-box{
+        display: block!important;
+    }
+    #gallery {
+        margin-bottom: 25px;
+    }
+    .counter-main {
+        padding-top: 0;
+    }
+    #brand {
+        padding: 60px 20px;
+    }
+    #works {
+        margin-bottom: 100px;
+    }
+    .about-para p {
+        font-size: 12px;
+    }
+    .organize-middle {
+        display: flex;
+        justify-content: center;
+    }
+    .team-item{
+        padding-bottom: 20px;
+    }
+    .form-input-wrapper{
+        padding-bottom: 18px;
+    }
+}
+
+
