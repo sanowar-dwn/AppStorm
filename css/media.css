@@ -1,9 +1,4 @@
 /* Large devices (portrait phones, less than 1400px) */
-@media(min-width:1300.99px){
-    .banner-right{
-        text-align: center;
-    }
-}
 @media(min-width:1200px) and (max-width:1300.98px){
     .banner-right{
         text-align: center;
